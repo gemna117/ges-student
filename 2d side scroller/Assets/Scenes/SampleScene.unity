@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 124571431}
   - component: {fileID: 124571430}
   - component: {fileID: 124571429}
+  - component: {fileID: 124571434}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -147,6 +148,21 @@ MonoBehaviour:
   maxSpeed: 25
   jumpForce: 10
   rb2d: {fileID: 124571430}
+  groundDetectTrigger: {fileID: 124571434}
+  groundContactFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 256
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!50 &124571430
 Rigidbody2D:
   serializedVersion: 4
@@ -250,6 +266,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &124571434
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 124571428}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.26}
+  serializedVersion: 2
+  m_Radius: 0.39
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +364,7 @@ GameObject:
   - component: {fileID: 1219817167}
   - component: {fileID: 1219817166}
   - component: {fileID: 1219817165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +464,7 @@ GameObject:
   - component: {fileID: 1309006096}
   - component: {fileID: 1309006095}
   - component: {fileID: 1309006094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SlipperyFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,8 +564,8 @@ GameObject:
   - component: {fileID: 2043724697}
   - component: {fileID: 2043724696}
   - component: {fileID: 2043724695}
-  m_Layer: 0
-  m_Name: Floor (2)
+  m_Layer: 8
+  m_Name: SlowFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
