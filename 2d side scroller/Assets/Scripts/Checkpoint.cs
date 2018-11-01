@@ -16,10 +16,12 @@ public class Checkpoint : MonoBehaviour {
 
     private bool isActivated;
     private SpriteRenderer spriteRenderer;
+    private AudioSource audioSource;
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
         UpdateColor();
     }
 
@@ -69,6 +71,7 @@ public class Checkpoint : MonoBehaviour {
             Debug.Log("player entered hazard");
             PlayerCharacter player = collision.GetComponent<PlayerCharacter>();
             player.SetCurrentCheckpoint(this);
+            audioSource.Play();
         }
     }
 }
