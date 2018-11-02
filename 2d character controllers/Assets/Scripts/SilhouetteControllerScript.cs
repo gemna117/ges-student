@@ -6,15 +6,18 @@ public class SilhouetteControllerScript : MonoBehaviour {
     public float maxSpeed = 10;
     bool facingRight = true;
 
+    Animator anim;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate ()
     {
         float move = Input.GetAxis("horizontal");
+        anim.SetFloat("speed", Mathf.Abs(move));
         rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
 
         if (move > 0 && !facingRight)
