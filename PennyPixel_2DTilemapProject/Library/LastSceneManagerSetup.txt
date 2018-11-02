@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/penve/OneDrive/Documents/GitHub/ges-student/2d side scroller/Assets/Scenes/SampleScene.unity
+  isLoaded: 1
+  isActive: 1
