@@ -149,8 +149,10 @@ MonoBehaviour:
   jumpForce: 10
   rb2d: {fileID: 124571430}
   playerGroundCollider: {fileID: 0}
-  playerMovingPhysicsMaterial: {fileID: 0}
-  playerStoppingPhysicsMaterial: {fileID: 0}
+  playerMovingPhysicsMaterial: {fileID: 6200000, guid: c4be43d7951742b469fe0ba8dd268f7a,
+    type: 2}
+  playerStoppingPhysicsMaterial: {fileID: 6200000, guid: 746027c41995d8249bb8b8a0c6a8ef73,
+    type: 2}
   groundDetectTrigger: {fileID: 124571434}
   groundContactFilter:
     useTriggers: 0

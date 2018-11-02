@@ -66,7 +66,7 @@ public class Checkpoint : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("player"))
+        if (collision.gameObject.CompareTag("player") && isActivated)
         {
             Debug.Log("player entered hazard");
             PlayerCharacter player = collision.GetComponent<PlayerCharacter>();
