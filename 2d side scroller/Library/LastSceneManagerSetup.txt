@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/penve/AppData/Local/Temp/Temp4_PennyPixel_2DTilemapProject.zip/PennyPixel_2DTilemapProject/Assets/Scenes/TilemapStart.unity
+- path: C:/Users/penve/OneDrive/Documents/GitHub/basic-2d-platform/basic 2d platform/Assets/Scenes/SampleScene.unity
   isLoaded: 1
   isActive: 1
