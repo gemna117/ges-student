@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/penve/OneDrive/Documents/GitHub/basic-2d-platform/basic 2d platform/Assets/Scenes/SampleScene.unity
+- path: Assets/Scenes/SampleScene.unity
   isLoaded: 1
   isActive: 1
